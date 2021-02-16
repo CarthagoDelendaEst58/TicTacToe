@@ -71,9 +71,16 @@ int main() {
     board = CreateBoard(board_size);
     int x = -1;
     int y = -1;
-    GetPlayerChoice(x, y);
-    std::string marker = "X";
-    board = PlaceMarker(x, y, marker, board);
+    int turn_count = 0;
+    while (turn_count < 9) {
+        DisplayBoard(board);
+        GetPlayerChoice(x, y);
+        std::string marker;
+        (turn_count%2 == 0) ? marker = "X" : marker = "O";
+        board = PlaceMarker(x, y, marker, board);
+        turn_count++;
+    }
+    printf("----Final Board----\n");
     DisplayBoard(board);
     return 0;
 }
