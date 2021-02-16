@@ -7,12 +7,22 @@ std::vector< std::vector<int> > CreateBoard(int size) {
     return board;
 }
 
-void DisplayBoard(std::vector< std::vector<int> > board, int size) {
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            std::cout << board[i][j] << " ";
+void DisplayBoard(std::vector< std::vector<int> > board) {
+    for (int i = 0; i < board.size(); i++) {
+        for (int j = 0; j < board[i].size(); j++) {
+            switch(board[i][j]) {
+                case 0:
+                    printf("X ");
+                    break;
+                case 1:
+                    printf("O ");
+                    break;
+                default:
+                    printf("  ");
+                    break;
+            }
         }
-        std::cout << std::endl;
+        printf("\n");
     }
 }
 
@@ -20,11 +30,6 @@ int main() {
     int board_size = 3;
     std::vector< std::vector<int> > board;
     board = CreateBoard(board_size);
-    // for (int i = 0; i < board_size; i++) {
-    //     for (int j = 0; j < board_size; j++) {
-    //         printf("%d ", board[i][j]);
-    //     }
-    //     printf("\n");
-    // }
+    DisplayBoard(board);
     return 0;
 }
