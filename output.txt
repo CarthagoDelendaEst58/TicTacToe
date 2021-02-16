@@ -1,0 +1,64 @@
+Enter x coordinate for next move: 1
+
+Enter y coordinate for next move: 1
+
+      
+  X   
+      
+Enter x coordinate for next move: 0
+
+Enter y coordinate for next move: 1
+
+      
+O X   
+      
+Enter x coordinate for next move: 1
+
+Enter y coordinate for next move: 0
+
+  X   
+O X   
+      
+Enter x coordinate for next move: 1
+
+Enter y coordinate for next move: 2
+
+  X   
+O X   
+  O   
+Enter x coordinate for next move: 2
+
+Enter y coordinate for next move: 0
+
+  X X 
+O X   
+  O   
+Enter x coordinate for next move: 0
+
+Enter y coordinate for next move: 0
+
+O X X 
+O X   
+  O   
+Enter x coordinate for next move: 0
+
+Enter y coordinate for next move: 2
+
+O X X 
+O X   
+X O   
+Enter x coordinate for next move: 2
+
+Enter y coordinate for next move: 1
+
+O X X 
+O X O 
+X O   
+Enter x coordinate for next move: 2
+
+Enter y coordinate for next move: 2
+
+----Final Board----
+O X X 
+O X O 
+X O X 
